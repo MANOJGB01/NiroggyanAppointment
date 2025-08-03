@@ -1,6 +1,6 @@
 # NirogGyan Frontend Assignment
 
-A responsive healthcare appointment booking web application built using React.js and static JSON data. This app allows users to explore doctor profiles, check availability, and book appointments in a simple, intuitive interface.
+A responsive healthcare appointment booking web application built using React.js and static data. This app allows users to explore doctor profiles, check availability, and book appointments in a simple, intuitive interface.
 
 ---
 
@@ -21,7 +21,7 @@ Build a user-friendly and responsive frontend interface to:
 - **Routing**: React Router DOM
 - **State Management**: React Context API
 - **Styling**: CSS3
-- **Backend**: None — uses **static JSON data** for doctors
+- **Backend**: None — uses **static data** for doctors
 
 ---
 
@@ -62,6 +62,6 @@ Build a user-friendly and responsive frontend interface to:
 📝 Notes
 This project uses static JSON to simulate backend data responses.
 
-No real API calls — doctor data is stored locally in a doctors.json file.
+No real API calls — doctor data is stored only static data not API's.
 
 Appointment data is managed in-memory via Context API (not persisted).
