@@ -1,0 +1,142 @@
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+/* Heading */
+.popup-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Form Styling */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Styling */
+.appointment-form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.appointment-form input::placeholder {
+  color: #ccc;
+}
+
+/* Button Group */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Buttons */
+.popup-buttons button {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 120px;
+}
+
+.popup-buttons button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.popup-buttons button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+.popup-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Success Message */
+.success-message {
+  font-size: 18px;
+  text-align: center;
+  color: #00ff88;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .popup-container {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .popup-container h2 {
+    font-size: 20px;
+  }
+
+  .appointment-form input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .popup-buttons button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .success-message {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .popup-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .popup-container h2 {
+    font-size: 22px;
+  }
+
+  .appointment-form input {
+    font-size: 15px;
+  }
+
+  .popup-buttons button {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 769px) {
+  .popup-container {
+    max-width: 500px;
+  }
+}

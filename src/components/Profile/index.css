@@ -1,0 +1,136 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f4f9f4, #e6f2ec);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeIn 0.4s ease-in-out;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #4fa94d;
+  margin: 0 auto;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.profile-info li {
+  font-size: 15px;
+  color: #444;
+  margin: 4px 0;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 17px;
+  border: none;
+  background-color: #4fa94d;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 16px;
+}
+
+.book-button:hover {
+  background-color: #3a8d3a;
+  transform: translateY(-2px);
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+}
+
+.loaders {
+  font-size: 36px;
+  color: #4fa94d;
+  font-family: "Segoe UI", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .profile-image {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .profile-info {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-content {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}

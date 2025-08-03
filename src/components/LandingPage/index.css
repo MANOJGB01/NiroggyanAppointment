@@ -1,0 +1,126 @@
+.landing-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Title */
+.landing-title {
+  text-align: center;
+  font-size: 32px;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+.landing-search-input {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px 16px;
+  width: 300px;
+  max-width: 90%;
+  font-size: 16px;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-search-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 6px rgba(30, 136, 229, 0.2);
+}
+
+/* Loading Text */
+.landing-loading-text {
+  text-align: center;
+  font-size: 18px;
+  color: #616161;
+}
+
+/* Doctor List Grid */
+.landing-doctor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Doctor Card */
+.landing-doctor-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(60, 64, 67, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.landing-doctor-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Doctor Image */
+.landing-doctor-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #90caf9;
+}
+
+/* Doctor Name */
+.landing-doctor-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d47a1;
+  margin: 8px 0 4px;
+}
+
+/* Doctor Specialization */
+.landing-doctor-specialization {
+  font-size: 16px;
+  color: #546e7a;
+  margin-bottom: 8px;
+}
+
+/* Availability Badge */
+.landing-availability {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.landing-available {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.landing-unavailable {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.para {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #1a237e;
+}
+
+.landing-doctor-link {
+  text-decoration: none;
+}

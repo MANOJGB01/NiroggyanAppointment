@@ -1,0 +1,103 @@
+/* Main navigation container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo-title {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bfff;
+}
+
+/* Appointment count */
+.appointment-count {
+  background-color: red;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container {
+    padding: 8px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .appointment-count {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+}
